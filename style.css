@@ -83,7 +83,7 @@ body {
     position: relative; /* Pastikan elemen ini memiliki konteks posisi */
     background-image: url(img/27145.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: left;
     min-height: 100vh;
     margin-top: -6.4rem;
     padding-top: 10.5rem;
