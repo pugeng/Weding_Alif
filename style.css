@@ -80,13 +80,26 @@ body {
 }
 
 .home {
+    position: relative; /* Pastikan elemen ini memiliki konteks posisi */
     background-image: url(img/27145.jpg);
-    background-color: rgba(255, 255, 255, 0.7);
     background-size: cover;
+    background-position: center;
     min-height: 100vh;
     margin-top: -6.4rem;
     padding-top: 10.5rem;
     padding-bottom: 5rem;
+    z-index: 1; /* Berada di atas overlay */
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Overlay putih dengan transparansi 50% */
+    z-index: -1; /* Overlay berada di bawah konten .home */
 }
 
 .home h2,
