@@ -327,11 +327,7 @@ footer a {
         font-size: 50%; /* Adjusted font size */
     }
 
-    #home .container,
-    #gifts .container,
-    #rsvp .container{
-        padding: 0 50px;
-    }
+
 
     #rsvp h2{
         font-size: 300%;
